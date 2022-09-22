@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'Yekan';
+    src: url("../font/ttf/Yekan.ttf");
+}
+@font-face {
+    font-family: 'Yekan-fa';
+    src: url("../font/ttf/YekanFa.ttf");
+}
+.font-fa{
+    font-family: 'Yekan-fa';
+}
+body{
+    font-family: 'Yekan';
+    --border-Color:#7f838f;
+    --first-color:#383b44;
+    --second-color:#fbff01;
+    --gray-color:#f3f4f7;
+    --border-radius:0.4rem;
+    font-size: 1rem;
+    color: var(--first-color);
+}
+.row{
+    margin: 0;
+}
+main{
+    padding: 2rem 1rem;
+}
+/*sidebar*/
+.sidebar{
+    display: block;
+    background-color: var(--first-color);
+    font-size: 0.9rem;
+    color: #FFF; 
+    transition: all 0.5s;
+    -webkit-transition: all 0.25s;
+}
+.sidebar-collapse{
+    font-size: 0.8rem;
+}
+.sidebar .nav-link{
+    color: #FFF;
+    border-bottom: 1px solid var(--border-Color);
+    padding: 0.8rem;
+    position: relative;
+}
+.sidebar .nav-link svg{
+    margin-left: 1rem;
+}
+.sidebar .nav-link:hover, .sidebar .nav-link:focus,.sidebar .nav-link:active{
+    color: var(--second-color);
+}
+.sidebar-collapse-show{
+    width: 190px;
+}
+.sidebar-collapse{
+    width: 50px;
+}
+.sidebar-collapse .nav-link{
+    padding: 0.8rem 0.9rem;
+}
+.sidebar-collapse .nav-link svg{
+    font-size: 1.1rem;
+}
+.sidebar-collapse .nav-link span{
+    position: absolute;
+    bottom: 0;
+    left: -22px;
+    width: auto;
+    padding: 0 0.3rem;
+    font-size: 0.8rem;
+    background-color: var(--second-color);
+    color: var(--first-color);
+    border-radius: var(--border-radius);
+    display: none;
+}
+.sidebar-collapse .nav-link:hover span{
+    display: block;
+}
+.sidebar-avatar{
+    display: block;
+    text-align: center;
+}
+.sidebar-avatar img{
+    width: 50px;
+}
+.sidebar-collapse .sidebar-avatar img{
+    width: 30px;
+}
+.sidebar-icon span{
+    width: 23px;
+    height: 2px;
+    background-color: var(--first-color);
+    margin: 0.4rem;
+    display: block;
+}
+.sidebar-icon span:first-child{
+    width: 30px;
+}
+.sidebar-icon span:last-child{
+    width: 16px;
+}
+.sidebar-icon:hover{
+    cursor: pointer;
+    border: 1px solid var(--border-Color);
+    background-color: var(--first-color);
+    border-radius: var(--border-radius);
+}
+.sidebar-icon:hover span{
+    background-color: var(--second-color);
+}
+/*wrapper*/
+.wrapper{
+    display: flex;
+    height: 100vh;
+    overflow: scroll initial;
+}
+.wrapper-content{
+    width: 100%;
+    overflow: auto;
+}
+header{
+    background-color: var(--gray-color);
+    height: 58px;
+    width: 100%;
+    padding: 0 0.5rem;
+}
+.header-icon{
+    color: #8c8e97;
+    position: relative;
+    margin-right: 0.8rem;
+}
+.header-icon span{
+    position: absolute;
+    background-color: #f52222;
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 0 0.3rem;
+    right: -5px;
+    top: -5px;
+    border-radius: 0.2rem;    
+    line-height: normal;
+}
+.header-icon:hover{
+    color: var(--first-color);
+    cursor: pointer;
+}
+/*slider*/
+.slider .swiper-slide{
+    height: 200px;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 2rem;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: var(--first-color);
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    color: var(--second-color);
+}
+.slider-wrapper .swiper-slide{
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+.swiper-slide img{
+    border-radius: var(--border-radius);
+}
+.slider-wrapper .swiper-slide img{
+    object-fit: cover;
+    width: 90%;
+    height: 77px;
+}
+.slider-wrapper .swiper-slide svg{
+    width: 90%;
+    font-size: 4.8rem;
+}
+/*input*/
+.form-control{
+    padding: 0.25rem 0.75rem;
+}
+.rmdp-container{
+    display: block !important;
+}
+.btn-site{
+    width: 100px;
+}
+#right-zoom {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+.react-audio-player {
+    width: 78%;
+    height: 40px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.toast.bg-success{
+    color: #FFF;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1000;
+}
